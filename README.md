@@ -30,9 +30,9 @@ backend-service/
 │── internal/           # Business logic & domain services
 │   ├── constant/       # Kebutuhan constant dan variable global
 │   ├── controllers/    # Handler untuk request API
+│   ├── models/         # Struct model database
 │   ├── repositories/   # Operasi database (CRUD) dengan interface
 │   ├── services/       # Business logic dengan interface
-│── models/             # Struct model database
 │── routes/             # Routing API
 │── go.mod              # Module Go
 │── Dockerfile          # Konfigurasi Docker
@@ -64,7 +64,7 @@ DB_NAME=ewallet
 Jalankan perintah berikut:
 
 ```
-go run cmd/main.go -host=127.0.0.1 -port=9000
+go run cmd/main.go -host=127.0.0.1 -port=8080
 ```
 
 Output yang diharapkan:
