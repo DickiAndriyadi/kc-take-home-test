@@ -8,7 +8,7 @@ import (
 
 type IUserRepository interface {
 	CheckExistingUser(nik, noHP string) (models.User, error)
-	CreateUser(nasabah models.User) error
+	CreateUser(user models.User) error
 }
 
 type UserRepository struct {
