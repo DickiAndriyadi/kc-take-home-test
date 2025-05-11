@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "36306be8-9381-4339-a83f-600c9f114a85",
+		"name": "Klik Cair",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7308725"
+	},
+	"item": [
+		{
+			"name": "Daftar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nama\": \"dicki\",\n    \"nik\" : \"123456\",\n    \"no_hp\": \"08888881\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/daftar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"daftar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tabung",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"no_hp\": \"08888881\",\n    \"nominal\": 5000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/tabung",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tabung"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tarik",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"no_hp\": \"08888881\",\n    \"nominal\": 2000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/tarik",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tarik"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cek Saldo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/saldo/08888881",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"saldo",
+						"08888881"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
